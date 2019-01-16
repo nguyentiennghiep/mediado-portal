@@ -1,0 +1,88 @@
+/* Basis css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ background-color: #F5F5F5;   
+ font-family: 'Noto Sans Japanese', 'Hiragino Kaku Gothic ProN', Meiryo, 'Open Sans', Helvetica, Arial, sans-serif;
+ color: #333333;
+ font-size: 100%; 
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: #F6591C;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.8em;
+}
+h4 {
+    font-size: 1.55em;
+}
+h5 {
+    font-size: 1.3em;
+}
+table, table tr, table td {
+    border: 1px solid #e7e7e7;
+    padding: 8px;
+}
+li{
+    list-style: none;
+}
+/* end basis css */
+
+/* logo */
+.container{
+    max-width: 1023px;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.logo .container img{
+    height: 50px;
+    width: auto;
+}
+
+/* end logo */
+
+/* navigation menu */
+.primary-menu .menu{
+    color: #8a8a8a;
+    display: flex;
+    align-items: center;
+}
+
+.primary-menu .menu li{
+    font-weight: 700;
+    padding: 10px 0;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+/* end navigation */
+
+/* main content */
+.main-content{
+    background: url(imgs/jumbotron_003.jpg) no-repeat; 
+    background-size: 100% 250px; 
+    height: 500px;
+}
+/* end main content */
