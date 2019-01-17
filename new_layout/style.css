@@ -49,13 +49,13 @@ li{
     background-color: #FFFFFF;
     border-radius: 3px;
     box-shadow: 0 0 3px rgba(0,0,0,0.4);
-    
+    padding: 15px;
     margin-top: 20px;
 }
 .card .card-title{
     text-align: center;
     font-size:14px;
-    padding-top:20px;
+    padding-bottom:10px;
     margin: 0px 20px;
     border-bottom: 0.5px solid #333333;
     font-weight: 600;
@@ -154,47 +154,81 @@ li{
 
 /* notification  */
 
-.tabs {
-
-    position: relative;   
-    min-height: 500px; /* This part sucks */
-    clear: both;
-    margin: 50px 0;
-  }
-  .tab {
-    float: left;
-  }
-  .tab label {
-    background: white;
-    padding: 10px; 
-    margin-left: -1px; 
+.main-content .main-page .left-column  .noti {
     position: relative;
-    left: 1px; 
-    top:10px;
-    border-radius: 3px;
+    display: block;
+    min-height: 20rem; 
+    background-color: #fff; 
   }
-  .tab [type=radio] {
-    display: none;   
+  
+.main-content .main-page .left-column  .noti  ul.tabs { 
+    display: block;
+    padding: 0; 
+    margin: 0;
+    border-bottom: 1px solid #ECEFF1;
   }
-  .content {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background: white;
-    right: 0;
-    bottom: 0;
-    padding: 20px;
-    border-radius: 3px;
-  }
+.main-content .main-page .left-column  .noti  ul.tabs:after { 
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-content .main-page .left-column  .noti ul.tabs li { 
+    list-style: none; 
+    float: left; 
+}
 
-  [type=radio]:checked ~ label {
-    background: white;
-    border-bottom: 2px solid #333333;
-    z-index: 2;
+.main-content .main-page .left-column  .noti ul.tabs li input[type="radio"] { display: none; }
+
+.main-content .main-page .left-column  .noti ul.tabs li input[type="radio"]:checked ~ label:after { 
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    margin-bottom: -1px;
+    height: 0.25rem;
+    background-color: #03A9F4;
   }
-  [type=radio]:checked ~ label ~ .content {
-    z-index: 1;
+.main-content .main-page .left-column  .noti ul.tabs li label {
+    position:relative;
+    display: block;
+    color: #37474F;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem 0.75rem;
+    margin-right: 0.25rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease-in-out;
   }
+.main-content .main-page .left-column  .noti ul.tabs li label:hover:after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    margin-bottom: -1px;
+    background-color: #B3E5FC;
+
+    height: 0.25rem;
+  }
+  input[type="radio"]:checked ~ .tabBody { 
+    display: block;
+  }
+  .tabBody { 
+    position: absolute;
+    display: none; 
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin-top: 3.5rem;
+    padding: 1rem 1.5rem;
+  }
+  p {
+    margin: 0 0 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #546E7A;
+  }
+  
+  /* hello */
 
 /* end notification */
 
